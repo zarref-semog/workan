@@ -1,0 +1,20 @@
+import { Router } from 'express';
+import auth from './auth.js';
+import boards from './boards.js';
+import teams from './teams.js';
+import users from './users.js';
+import files from './files.js';
+import appearance from './appearance.js';
+import permissions from './permissions.js';
+import health from './health.js';
+
+const router = Router();
+router.use('/auth', auth);
+router.use('/boards', boards);
+router.use('/teams', teams);
+router.use('/users', users);
+router.use('/files', files);
+router.use('/appearance', appearance);
+router.use('/settings/permissions', permissions);
+router.use('/health', health);
+export default router;

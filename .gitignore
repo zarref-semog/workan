@@ -1,0 +1,8 @@
+node_modules/
+api/uploads/
+.npm-cache/
+dist/
+.env
+*.log
+.DS_Store
+
